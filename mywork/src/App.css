@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +33,89 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.container{
+
+  margin:0 auto;
+  /* height: 60vh; */
+  width: 350px;
+  text-align: center;
+  border: 5px solid #0b0b0b;
+  background-color:rgb(216, 236, 231);
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  /* background: red; */
+  /* cursor: pointer; */
+
+}
+
+.btn{
+  cursor: pointer;
+}
+
+.keypad{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: minmax(60px,auto);
+  cursor: pointer;
+}
+input[type="text"]{
+  height: 70px;
+  width: 345px;
+  background-color:bisque ;
+  border: 0px;
+  /* color: blue; */
+  text-align: right;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#clear{
+  grid-column: 1/3;
+  grid-row: 1;
+  background: #1cefd3;
+  color: #000;
+}
+
+#result{
+  grid-row: 5;
+  grid-column: 3/5;
+  background: #1cefd3;
+  color: #000;
+}
+#backspace{
+  background: #1cefd3;
+  color: #000;
+}
+#div{
+  background: #1cefd3;
+  color: #000;
+}
+#mul{
+  background: #1cefd3;
+  color: #000;
+}
+#sub{
+  background: #1cefd3;
+  color: #000;
+}
+#add{
+  background: #1cefd3;
+  color: #000;
+}
+button{
+  margin: 3px;
+  border-radius: 5px;
+  border: none;
+  color:rgb(241, 240, 239);
+  background-color: #282c34;
+  font-weight: 800;
+  
 }
